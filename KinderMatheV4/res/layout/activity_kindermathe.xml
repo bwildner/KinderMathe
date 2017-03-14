@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/greeting_field"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/enter_your_name" />
+
+    <TextView
+        android:id="@+id/aufgabenfeld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="21dp"
+        android:text="@string/aufgabenfeldinit"
+        android:textSize="20sp" />
+
+    <ToggleButton
+        android:id="@+id/plus_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginRight="70dp"
+        android:text="@string/plus_button"
+        android:textOff="+"
+        android:textOn="+" />
+
+    <ToggleButton
+        android:id="@+id/minus_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/minus_button"
+        android:textOff="-"
+        android:textOn="-" />
+
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/aufgabenfeld"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="phone"
+        android:windowSoftInputMode="stateHidden" />
+
+    <Button
+        android:id="@+id/lsg_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_field"
+        android:layout_toLeftOf="@+id/minus_button"
+        android:text="@string/hi_button" />
+
+    <Button
+        android:id="@+id/nochmal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lsg_button"
+        android:layout_alignBottom="@+id/lsg_button"
+        android:layout_alignRight="@+id/name_field"
+        android:text="@string/nochmal_button" />
+
+    <ImageView
+        android:id="@+id/sauri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/name_field"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/name_field"
+        android:src="@drawable/sauri"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/smiley"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sauri"
+        android:layout_alignTop="@+id/sauri"
+        android:src="@drawable/smiley"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/jpgview"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/lsg_button"
+        android:layout_marginTop="28dp"
+        android:layout_toLeftOf="@+id/smiley"
+        android:scaleType="fitCenter" />
+
+    <ToggleButton
+        android:id="@+id/bis1000_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/bis100_button"
+        android:layout_marginTop="50dp"
+        android:text="1000"
+        android:textOff="1000"
+        android:textOn="1000" />
+
+    <ToggleButton
+        android:id="@+id/bis100_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/bis10_button"
+        android:layout_marginTop="50dp"
+        android:text="100"
+        android:textOff="100"
+        android:textOn="100" />
+
+    <ToggleButton
+        android:id="@+id/bis10_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/smiley"
+        android:layout_marginTop="80dp"
+        android:text="10"
+        android:textOff="10"
+        android:textOn="10" />
+
+</RelativeLayout>

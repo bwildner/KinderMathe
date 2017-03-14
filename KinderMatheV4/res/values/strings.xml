@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">KinderMathe</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_KinderMathe">KinderMathe</string>
+    <string name="enter_your_name">Wieviel ist:</string>
+    <string name="hi_button">       =       </string>
+    <string name="error_name_missing">Bitte Lösung eingeben</string>
+	<string name="error_ok">OK</string>
+	<string name="hi_greeting">Hi %s!</string>
+	<string name="hello_greeting">Hello %s!</string>
+	<string name="aufgabenfeldinit">neueAufgabe</string>
+	<string name="error_nurzahlen">Nur Zahlen</string>
+	<string name="minus_button">-</string>
+	<string name="plus_button">+</string>
+	<string name="nochmal_button">Nochmal</string>
+	
+
+</resources>
